@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".ListFragment"
+    android:padding="@dimen/padding_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_txt_big"
+            android:text="City List"
+            android:textColor="@color/white"/>
+
+        <ListView
+            android:id="@+id/lst_view"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="@dimen/padding_vertical"
+            android:layout_marginTop="@dimen/size_txt_temperature"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="@dimen/size_float_button"
+        android:layout_height="@dimen/size_float_button"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="@dimen/size_txt_big"
+        android:layout_marginBottom="@dimen/size_txt_big"
+        android:background="@drawable/float_action_button_widget"
+/>
+
+</FrameLayout>

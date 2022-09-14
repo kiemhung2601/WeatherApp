@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1125" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/custom_bg_track.xml" value="0.194" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/custom_button.xml" value="0.194" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/custom_edit_text.xml" value="0.194" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/custom_thumb.xml" value="0.194" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/float_action_button_widget.xml" value="0.2015" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/gradient_background.xml" value="0.1845" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/gradient_information.xml" value="0.195" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.195" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/ic_cloudy.xml" value="0.1125" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/ic_rectangle.xml" value="0.2015" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/ic_setting.xml" value="0.195" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/ic_sun_cloud.xml" value="0.2015" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/profile_background.xml" value="0.194" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/drawable/retangle.xml" value="0.195" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/account_widget.xml" value="0.4" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.2128623188405797" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/fragment_home.xml" value="0.176" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/fragment_list.xml" value="0.18697916666666667" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/infor_widget.xml" value="0.1859375" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/item_city_widget.xml" value="0.1859375" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/setting_widget.xml" value="0.24114583333333334" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/temp_widget.xml" value="0.176" />
+        <entry key="..\:/IMT/JavaAndroid/WeatherApp/app/src/main/res/layout/weather_settings_widget.xml" value="0.18697916666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

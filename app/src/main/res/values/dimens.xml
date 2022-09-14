@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_horizontal">20dp</dimen>
+    <dimen name="size_txt_big">30sp</dimen>
+    <dimen name="size_txt">18sp</dimen>
+    <dimen name="size_txt_small">15sp</dimen>
+    <dimen name="size_txt_temperature">40sp</dimen>
+    <dimen name="radius">20sp</dimen>
+    <dimen name="line">2dp</dimen>
+    <dimen name="margin_top">63dp</dimen>
+    <dimen name="margin_item">31dp</dimen>
+    <dimen name="width_infor">160dp</dimen>
+    <dimen name="padding_vertical">10dp</dimen>
+    <dimen name="radius_float_button">5sp</dimen>
+    <dimen name="size_float_button">75dp</dimen>
+    <dimen name="height_switch">23dp</dimen>
+    <dimen name="width_switch">40dp</dimen>
+    <dimen name="size_thumb">30dp</dimen>
+    <dimen name="line_thumb">4dp</dimen>
+</resources>

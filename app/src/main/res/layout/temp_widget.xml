@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_infor"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_information"
+        android:padding="@dimen/padding_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MIN TEMP"
+            android:textSize="@dimen/size_txt"
+            android:textColor="@color/grey"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7°C"
+            android:textSize="@dimen/size_txt_big"
+            android:textColor="@color/white"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min"
+            android:textSize="@dimen/size_txt_big"
+            android:textColor="@color/white"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="@dimen/margin_item"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/width_infor"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_information"
+        android:padding="@dimen/padding_vertical"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAX TEMP"
+            android:textSize="@dimen/size_txt"
+            android:textColor="@color/grey"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="23°C"
+            android:textSize="@dimen/size_txt_big"
+            android:textColor="@color/white"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max"
+            android:textSize="@dimen/size_txt_big"
+            android:textColor="@color/white"
+            app:fontStyle="normal"
+            app:fontWeight="400"/>
+
+    </LinearLayout>
+</LinearLayout>

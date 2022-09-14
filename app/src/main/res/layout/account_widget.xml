@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_background"
+    android:padding="@dimen/size_txt_big">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:paddingStart="@dimen/padding_vertical"
+        android:textColor="@color/black"
+        android:hint="Account"
+        android:textSize="@dimen/size_txt_small"
+        android:textColorHint="@color/black"
+        android:drawableStart="@drawable/ic_light_account"
+        android:background="@drawable/custom_edit_text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="@dimen/size_txt"
+        android:background="@drawable/custom_edit_text"
+        android:drawableStart="@drawable/ic_light_lock"
+        android:hint="Password"
+        android:inputType="textVisiblePassword"
+        android:paddingStart="@dimen/padding_vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/size_txt_small" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="Delete Account"
+        android:textSize="@dimen/size_txt"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:fontWeight="400"/>
+
+
+
+</LinearLayout>
