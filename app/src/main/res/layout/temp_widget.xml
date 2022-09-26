@@ -23,6 +23,7 @@
             app:fontStyle="normal"
             app:fontWeight="400"/>
         <TextView
+            android:id="@+id/txt_min_temp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="7°C"
@@ -63,6 +64,7 @@
             app:fontStyle="normal"
             app:fontWeight="400"/>
         <TextView
+            android:id="@+id/txt_max_temp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="23°C"

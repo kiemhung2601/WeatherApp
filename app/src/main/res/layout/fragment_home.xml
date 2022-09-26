@@ -22,6 +22,7 @@
             android:padding="@dimen/padding_horizontal">
 
             <TextView
+                android:id="@+id/txt_location"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Escondido"
@@ -31,6 +32,7 @@
                 app:fontWeight="400" />
 
             <TextView
+                android:id="@+id/txt_local_time"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Jul 13 2021"
@@ -40,12 +42,16 @@
                 app:fontWeight="400" />
 
             <ImageView
+                android:id="@+id/img_weather"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:minHeight="200dp"
+                android:minWidth="200dp"
                 android:src="@drawable/ic_cloudy" />
 
             <TextView
+                android:id="@+id/txt_temperature"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="18°C"
@@ -55,7 +61,9 @@
                 app:fontStyle="normal"
                 app:fontWeight="400" />
 
+
             <TextView
+                android:id="@+id/txt_weather_status"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Cloudy"
@@ -65,20 +73,21 @@
                 app:fontStyle="normal"
                 app:fontWeight="400" />
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <include
+                    android:id="@+id/include_temp"
                     layout="@layout/temp_widget"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/margin_top"
-                    android:layout_marginBottom="@dimen/padding_horizontal"/>
+                    android:layout_marginBottom="@dimen/padding_horizontal" />
 
                 <include
+                    android:id="@+id/include_infor"
                     layout="@layout/infor_widget"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -96,6 +105,7 @@
         android:paddingHorizontal="@dimen/padding_horizontal"
         android:paddingTop="@dimen/padding_vertical">
         <include
+            android:id="@+id/include_settings"
             layout="@layout/setting_widget"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
