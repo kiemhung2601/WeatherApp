@@ -14,20 +14,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.example.weatherapp.databinding.FragmentHomeBinding;
-import com.example.weatherapp.model.CityModel;
 import com.example.weatherapp.model.Weather;
 import com.example.weatherapp.network.ApiService;
 import com.example.weatherapp.untils.DownloadImageTask;
-
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -73,11 +65,11 @@ public class HomeFragment extends Fragment {
                     binding.txtLocation.setText(weather.getLocation().getName());
                     binding.txtLocalTime.setText(weather.getLocation().getLocaltime());
                     binding.txtWeatherStatus.setText(weather.getCurrent().getCondition().getText());
-                    binding.txtTemperature.setText(String.valueOf(weather.getCurrent().getTemp_c()));
-                    binding.includeTemp.txtMinTemp.setText(String.valueOf(weather.getCurrent().getTemp_c()));
-                    binding.includeTemp.txtMaxTemp.setText(String.valueOf(weather.getCurrent().getTemp_f()));
+                    binding.txtTemperature.setText(weather.getCurrent().getTemp_c() + "°C");
+                    binding.includeTemp.txtMinTemp.setText(weather.getCurrent().getTemp_c() + "°C");
+                    binding.includeTemp.txtMaxTemp.setText(weather.getCurrent().getTemp_f() + "°C");
                     binding.includeInfor.txtUv.setText(String.valueOf(weather.getCurrent().getUv()));
-                    binding.includeInfor.txtFeelsLike.setText(String.valueOf(weather.getCurrent().getFeelslike_c()));
+                    binding.includeInfor.txtFeelsLike.setText(weather.getCurrent().getFeelslike_c() + "°C");
                     binding.includeInfor.txtPressure.setText(weather.getCurrent().getPressure_mb() + " hPa");
 
                     new DownloadImageTask(binding.imgWeather)
