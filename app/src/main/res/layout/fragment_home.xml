@@ -1,104 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".HomeFragment">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ScrollView
-        android:layout_weight="1"
-        android:id="@+id/scroll_view"
+    <data>
+        <variable
+            name="homeFragmentViewModel"
+            type="com.example.weatherapp.viewmodels.HomeFragmentViewModel" />
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:fillViewport="true">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HomeFragment">
 
-        <LinearLayout
+        <ScrollView
+            android:layout_weight="1"
+            android:id="@+id/scroll_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/gradient_background"
-            android:orientation="vertical"
-            android:padding="@dimen/padding_horizontal">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Escondido"
-                android:textColor="@color/white"
-                android:textSize="@dimen/size_txt_big"
-                app:fontStyle="normal"
-                app:fontWeight="400" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Jul 13 2021"
-                android:textColor="@color/grey"
-                android:textSize="@dimen/size_txt"
-                app:fontStyle="normal"
-                app:fontWeight="400" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/ic_cloudy" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="18°C"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/size_txt_temperature"
-                app:fontStyle="normal"
-                app:fontWeight="400" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Cloudy"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="@dimen/size_txt"
-                app:fontStyle="normal"
-                app:fontWeight="400" />
-
+            android:layout_height="0dp"
+            android:fillViewport="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:background="@drawable/gradient_background"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_horizontal">
 
-                <include
-                    layout="@layout/temp_widget"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/margin_top"
-                    android:layout_marginBottom="@dimen/padding_horizontal"/>
+                    android:text="@{homeFragmentViewModel.txtLocation}"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_txt_big"
+                    app:fontStyle="normal"
+                    app:fontWeight="400" />
 
-                <include
-                    layout="@layout/infor_widget"
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/padding_horizontal" />
+                    android:text="@{homeFragmentViewModel.txtLocalTime}"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/size_txt"
+                    app:fontStyle="normal"
+                    app:fontWeight="400" />
+
+                <ImageView
+                    android:id="@+id/img_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="200dp"
+                    android:minWidth="200dp"
+                    android:src="@drawable/ic_cloudy" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{homeFragmentViewModel.txtTemperature}"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_txt_temperature"
+                    app:fontStyle="normal"
+                    app:fontWeight="400" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@{homeFragmentViewModel.txtWeatherStatus}"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_txt"
+                    app:fontStyle="normal"
+                    app:fontWeight="400" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        app:homeFragmentViewModel="@{homeFragmentViewModel}"
+                        layout="@layout/temp_widget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top"
+                        android:layout_marginBottom="@dimen/padding_horizontal"/>
+
+                    <include
+                        app:homeFragmentViewModel="@{homeFragmentViewModel}"
+                        layout="@layout/infor_widget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/padding_horizontal" />
+                </LinearLayout>
+
             </LinearLayout>
 
-        </LinearLayout>
+        </ScrollView>
 
-    </ScrollView>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/gradient_background"
-        android:paddingHorizontal="@dimen/padding_horizontal"
-        android:paddingTop="@dimen/padding_vertical">
-        <include
-            layout="@layout/setting_widget"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_background"
+            android:paddingHorizontal="@dimen/padding_horizontal"
+            android:paddingTop="@dimen/padding_vertical">
+            <include
+                layout="@layout/setting_widget"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+</layout>
