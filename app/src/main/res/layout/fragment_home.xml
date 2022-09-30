@@ -54,7 +54,8 @@
                     android:layout_gravity="center"
                     android:minHeight="200dp"
                     android:minWidth="200dp"
-                    android:src="@drawable/ic_cloudy" />
+                    android:src="@drawable/ic_cloudy"
+                    app:imageUrl="@{homeFragmentViewModel.icon}"/>
 
                 <TextView
                     android:layout_width="match_parent"

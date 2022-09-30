@@ -62,16 +62,12 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false);
 
-        homeFragmentViewModel = new HomeFragmentViewModel();
+        homeFragmentViewModel = new HomeFragmentViewModel(getViewLifecycleOwner());
         homeFragmentViewModel.getWeather("6dd477c8298e4243a2030401222609", "Paris").observe(getViewLifecycleOwner(), new Observer<Weather>() {
             @Override
             public void onChanged(Weather weather) {
                 if(weather != null){
                     binding.setHomeFragmentViewModel(homeFragmentViewModel);
-                    homeFragmentViewModel.refreshData(weather);
-
-                    new DownloadImageTask(binding.imgWeather)
-                            .execute("https:" + weather.getCurrent().getCondition().getIcon());
                 }
             }
         });
